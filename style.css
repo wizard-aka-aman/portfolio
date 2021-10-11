@@ -218,11 +218,46 @@ footer{
     background: #e74e3c;
     font-size: 20px;
 }
+#sidenav{
+    display: none;
+}
 @media only screen and (max-width:770px){
     header{
         background: url('portfolioimg/bg1.jpeg');
         background-size: cover;
-        
+    }
+    #sidenav{
+        position: fixed;
+        transition: 0.4s;
+        top: 0;
+        right:0;
+        width: 250px;
+        height: 100vh;
+        background: rgba(0,0,0,0.8);
+        padding: 100px 0px;
+        display: block;
+    }
+    #sidenav a{
+        display: block;
+        display: block;
+        text-decoration: none;
+        color: #ffff;
+        font-size: 20px;
+        margin: 10px 30px;
+        padding: 20px;
+    }
+    #sidenav a:hover{
+        background: #e74e3c;
+        transition: 0.4s;
+        border-radius: 8px;
+    }
+    #menubar{
+        position: fixed;
+        top: 15px;
+        left: 5px;
+        color: #ffff;
+        cursor: pointer;
+        width: 40px;
     }
     .menu a{
         display: none;
@@ -270,5 +305,10 @@ footer{
     }
     .contact-right-col{
         flex-basis: 100%;
+    }
+}
+@media only screen and (min-width:771px){
+    #menubar{
+        display: none;
     }
 }
