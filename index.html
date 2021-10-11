@@ -17,6 +17,7 @@
         <nav>
             <div class="logo">PORTFO<span>LIO</span></div>
             <div class="menu">
+                <img src="portfolioimg/download.png" id="menubar">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
@@ -31,6 +32,13 @@
             <button class="c-btn">Hire me</button>
         </div>
     </header>
+    <div id="sidenav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
 
 
     <section id="about">
@@ -173,5 +181,17 @@
         });
         </script>
 </body>
+<script>
+    var menu =document.getElementById("menubar"); 
+    var sidenav =document.getElementById("sidenav"); 
+    sidenav.style.width="0px";
+    menu.onclick = function(){
+    if(sidenav.style.width=="0px"){
+        sidenav.style.width="250px";
+    }
+    else{
+        sidenav.style.width="0px";
+    }}
+</script>
 
 </html>
