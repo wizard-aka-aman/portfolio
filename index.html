@@ -33,11 +33,11 @@
         </div>
     </header>
     <div id="sidenav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a id="a" href="#home">Home</a>
+        <a id="b" href="#about">About</a>
+        <a id="c" href="#skills">Skills</a>
+        <a id="d" href="#services">Services</a>
+        <a id="e" href="#contact">Contact</a>
     </div>
 
 
@@ -184,14 +184,47 @@
 <script>
     var menu =document.getElementById("menubar"); 
     var sidenav =document.getElementById("sidenav"); 
+    var a = document.getElementById("a");
+    var b = document.getElementById("b");
+    var c = document.getElementById("c");
+    var d = document.getElementById("d");
+    var e = document.getElementById("e");
     sidenav.style.width="0px";
     menu.onclick = function(){
     if(sidenav.style.width=="0px"){
         sidenav.style.width="250px";
     }
+    else if (sidenav.style.top>"10px"){
+        sidenav.style.width="0px"
+    }
     else{
         sidenav.style.width="0px";
     }}
+    a.onclick = function(){
+        if(sidenav.style.width=="250px"){
+            sidenav.style.width="0px";
+        }
+    }
+    b.onclick = function(){
+        if(sidenav.style.width=="250px"){
+            sidenav.style.width="0px";
+        }
+    }
+    c.onclick = function(){
+        if(sidenav.style.width=="250px"){
+            sidenav.style.width="0px";
+        }
+    }
+    d.onclick = function(){
+        if(sidenav.style.width=="250px"){
+            sidenav.style.width="0px";
+        }
+    }
+    e.onclick = function(){
+        if(sidenav.style.width=="250px"){
+            sidenav.style.width="0px";
+        }
+    }
 </script>
 
 </html>
