@@ -239,9 +239,8 @@ footer{
     }
     #sidenav a{
         display: block;
-        display: block;
         text-decoration: none;
-        color: #ffff;
+        color: rgb(255, 255, 255);
         font-size: 20px;
         margin: 10px 30px;
         padding: 20px;
@@ -305,6 +304,13 @@ footer{
     }
     .contact-right-col{
         flex-basis: 100%;
+        font-size: 30px;
+    }
+    .contact-right-col input{
+        font-size: 20px;
+    }
+    .section-info{
+        margin-bottom: 30px;
     }
 }
 @media only screen and (min-width:771px){
